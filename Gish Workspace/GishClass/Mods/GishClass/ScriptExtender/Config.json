@@ -1,0 +1,7 @@
+{
+    "RequiredVersion": 4,
+    "ModTable": "BarbarianRework_9f47b650-7956-43ea-b637-db49bdc484e4",
+    "FeatureFlags": [
+        "Lua"
+    ]
+}

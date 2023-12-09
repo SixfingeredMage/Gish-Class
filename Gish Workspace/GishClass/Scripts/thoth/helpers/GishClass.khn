@@ -1,0 +1,48 @@
+local __util = require 'larian.util'
+
+function SM_PsionicDie_Size(entity)
+    local PED_SM = 0
+        entity = entity or context.Source
+        if entity.IsValid and HasPassive('SM_PsionicEnergyDie0',entity).Result then
+            local PED_SM = 0
+        end
+        if entity.IsValid and HasPassive('SM_PsionicEnergyDie1',entity).Result then
+            PED_SM = 1d4
+        end
+        if entity.IsValid and HasPassive('SM_PsionicEnergyDie2',entity).Result then
+            PED_SM = 1d6
+        end
+        if entity.IsValid and HasPassive('SM_PsionicEnergyDie3',entity).Result then
+            PED_SM = 1d8
+        end
+        if entity.IsValid and HasPassive('SM_PsionicEnergyDie4',entity).Result then
+            PED_SM = 1d10
+        end
+        if entity.IsValid and HasPassive('SM_PsionicEnergyDie5',entity).Result then
+            PED_SM = 1d12
+        end
+        if entity.IsValid and HasPassive('SM_PsionicEnergyDie6',entity).Result then
+            PED_SM = 1d20
+        end
+    return PED_SM
+end
+
+function GishLevelOdd(entity)
+    local entity = entity or context.Source
+    return ConditionResult((entity.GetClassLevel('Gish') == 1) or (entity.GetClassLevel('Gish') == 3) or (entity.GetClassLevel('Gish') == 5) or (entity.GetClassLevel('Gish') == 7) or (entity.GetClassLevel('Gish') == 9) or (entity.GetClassLevel('Gish') == 11) or (entity.GetClassLevel('Gish') == 13) or (entity.GetClassLevel('Gish') == 15) or (entity.GetClassLevel('Gish') == 17) or (entity.GetClassLevel('Gish') == 19))
+end
+
+function GishMulticlass(entity)
+    local entity = entity or context.Source
+    return ConditionResult((entity.Level > entity.GetClassLevel('Gish')))
+end
+
+function GishSpellcasterLevelEqualTo(level, entity)
+    local entity = entity or context.Source
+    return ConditionResult(((math.floor((entity.GetClassLevel('Gish')/2) + 0.51)) + entity.GetClassLevel('Wizard') + entity.GetClassLevel('Cleric') + entity.GetClassLevel('Druid') + entity.GetClassLevel('Bard') + entity.GetClassLevel('Sorcerer')) + math.floor((entity.GetClassLevel('Paladin')/2) + (entity.GetClassLevel('Ranger')/2)) == level)
+end
+
+function GishSpellcasterLevelEqualOrGreaterThan(level, entity)
+    local entity = entity or context.Source
+    return ConditionResult(((math.floor((entity.GetClassLevel('Gish')/2) + 0.51)) + entity.GetClassLevel('Wizard') + entity.GetClassLevel('Cleric') + entity.GetClassLevel('Druid') + entity.GetClassLevel('Bard') + entity.GetClassLevel('Sorcerer')) + math.floor((entity.GetClassLevel('Paladin')/2) + (entity.GetClassLevel('Ranger')/2)) >= level)
+end

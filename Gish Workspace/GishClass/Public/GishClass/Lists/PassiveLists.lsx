@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="307"/>
+    <region id="PassiveLists">
+        <node id="root">
+            <children>
+				<node id="PassiveList">	Instincts 1
+					<attribute id="Comment" type="LSString" value="Tier1PsionicTechniques"/>
+					<attribute id="Passives" type="LSString" value=""/>
+					<attribute id="UUID" type="guid" value="25720da6-7b86-4ae9-adf1-4d76e84f6947"/>
+				</node>
+            </children>
+        </node>
+    </region>
+</save>

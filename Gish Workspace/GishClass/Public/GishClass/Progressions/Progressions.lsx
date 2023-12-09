@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<save>
+		<version major="4" minor="0" revision="9" build="330"/>
+		<region id="Progressions">
+			<node id="root">
+				<children>
+					<node id="Progression">
+						<attribute id="Name" type="LSString" value="CLASSES"/>
+						<attribute id="UUID" type="guid" value="710f5e93-2b5c-42f4-b1ae-4b588c335376"/>
+					</node>
+					<node id="Progression">
+						<attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);;ActionResource(SpellSlot,2,1)"/>
+						<attribute id="Level" type="uint8" value="1"/>
+						<attribute id="Name" type="LSString" value="Gish"/>
+						<attribute id="ProgressionType" type="uint8" value="0"/>
+						<attribute id="PassivesAdded" type="LSString" value="Passive_GishExtraSlots"/>
+						<attribute id="Selectors" type="LSString" value="SelectPassives(25720da6-7b86-4ae9-adf1-4d76e84f6947,1);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectSpells(6466efce-766a-4df0-9db3-bbbf1ab03ab0,2,0,,,,AlwaysPrepared);"/>
+						<attribute id="TableUUID" type="guid" value="60bbcc97-5381-4898-bc15-908c072895de"/>
+						<attribute id="UUID" type="guid" value="a2198ee9-ea4c-468e-b6b4-22b32d37806e"/>
+					</node>
+					<node id="Progression">
+						<attribute id="Boosts" type="LSString" value="Proficiency(SimpleWeapons);Proficiency(MartialWeapons);Proficiency(LightArmor)"/>
+						<attribute id="IsMulticlass" type="bool" value="true"/>
+						<attribute id="Level" type="uint8" value="1"/>
+						<attribute id="Name" type="LSString" value="Gish"/>
+						<attribute id="PassivesAdded" type="LSString" value="Passive_GishExtraSlots"/>
+						<attribute id="Selectors" type="LSString" value="SelectPassives(497bf82e-f9e1-4fb0-be4b-e58b20dc185b,1);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectSpells(6466efce-766a-4df0-9db3-bbbf1ab03ab0,2,0,,,,AlwaysPrepared);"/>
+						<attribute id="ProgressionType" type="uint8" value="0"/>
+						<attribute id="TableUUID" type="guid" value="60bbcc97-5381-4898-bc15-908c072895de"/>
+						<attribute id="UUID" type="guid" value="2dc1015e-6fd9-48aa-923e-eecaf72a83f1"/>
+					</node>
+					<node id="Progression">
+						<attribute id="Boosts" type="LSString" value="ActionResource(PsionicEnergyDie,2,0)"/>
+						<attribute id="Level" type="uint8" value="2"/>
+						<attribute id="Name" type="LSString" value="Gish"/>
+						<attribute id="Selectors" type="LSString" value="AddSpells(3eb4a245-8a64-4c8a-8d38-816c15642aa2)"/>
+						<attribute id="PassivesAdded" type="LSString" value="SM_DIE_CHECKING_SYSTEM;SM_PSIONIC_INFUSION"/>
+						<attribute id="ProgressionType" type="uint8" value="0"/>
+						<attribute id="TableUUID" type="guid" value="60bbcc97-5381-4898-bc15-908c072895de"/>
+						<attribute id="UUID" type="guid" value="89986e8a-09b1-4163-b1d0-ddb2332bf3c5"/>
+					</node>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

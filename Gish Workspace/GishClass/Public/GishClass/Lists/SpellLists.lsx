@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="328"/>
+    <region id="SpellLists">	
+        <node id="root">
+            <children>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Gish cantrips (Intelligence)"/>
+                    <attribute id="Spells" type="LSString" value="Projectile_AcidSplash;Shout_BladeWard;Target_ChillTouch;Target_DancingLights;Projectile_FireBolt;Target_Guidance;Target_MageHand;Projectile_PoisonSpray;Target_Resistance;Projectile_RayOfFrost;Target_ShockingGrasp;Target_ThornWhip"/>
+                    <attribute id="UUID" type="guid" value="6466efce-766a-4df0-9db3-bbbf1ab03ab0"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Arcane Will"/>
+                    <attribute id="Spells" type="LSString" value="Shout_ArcaneWill_Container"/>
+                    <attribute id="UUID" type="guid" value="3eb4a245-8a64-4c8a-8d38-816c15642aa2"/>
+                </node>
+			</children>
+        </node>
+    </region>
+</save>
